@@ -47,7 +47,7 @@ const Navbar = () => {
             </nav>
             {/* Mobile & Tablet Menu */}
             <div
-                className={`lg:hidden w-full md:w-1/3 md:absolute right-5 p-8 shadow-lg rounded bg-stone-200 overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"
+                className={`lg:hidden w-full md:w-1/3 md:absolute right-5 p-8 shadow-lg rounded bg-stone-200 dark:bg-stone-800 overflow-hidden transition-all duration-300 text-black dark:text-white ${menuOpen ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"
                     }`}
             >
                 <ul className="flex flex-col gap-4">{navLinks}</ul>
