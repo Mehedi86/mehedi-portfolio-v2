@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='flex items-center gap-6'>
                 <div>
                     
-                    <h1 className='text-2xl font-bold border py-1 px-2 shadow rounded flex items-center gap-2'>Mehedi</h1>
+                    <h1 className='text-2xl font-bold py-1 px-2 shadow border rounded flex items-center gap-2'>Mehedi</h1>
                     
                 </div>
                 <div className='space-x-2'>
