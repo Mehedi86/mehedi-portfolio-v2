@@ -2,20 +2,21 @@ import React, { useState } from 'react'
 
 import { Link } from 'react-router';
 import { ModeToggle } from '../mode-toggler';
-import { FaBars, FaOpencart, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const linkClass = "hover:bg-gray-100 px-2 py-2 rounded dark:text-white dark:hover:bg-gray-600"
     const navLinks = (
         <>
-            <Link to="/tasks">Home</Link>
-            <Link to="/tasks">About</Link>
-            <Link to="/tasks">Skills</Link>
-            <Link to="/tasks">Projects</Link>
-            <Link to="/tasks">Education</Link>
-            <Link to="/tasks">Contact</Link>
+            <Link className={linkClass} to="/tasks">Home</Link>
+            <Link className={linkClass} to="/tasks">About</Link>
+            <Link className={linkClass} to="/tasks">Skills</Link>
+            <Link className={linkClass} to="/tasks">Projects</Link>
+            <Link className={linkClass} to="/tasks">Education</Link>
+            <Link className={linkClass} to="/tasks">Contact</Link>
         </>
     )
     return (
@@ -28,7 +29,7 @@ const Navbar = () => {
                     </div>
                     {/* Desktop nav item menu */}
                     <div className='hidden lg:block'>
-                        <ul className='space-x-2'>{navLinks}</ul>
+                        <ul className='space-x-3'>{navLinks}</ul>
                     </div>
                 </div>
 
