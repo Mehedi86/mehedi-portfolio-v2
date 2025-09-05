@@ -6,22 +6,29 @@ import { ModeToggle } from '../mode-toggler';
 
 
 const Navbar = () => {
+
+    const navLinks = (
+        <>
+            <Link to="/tasks">Home</Link>
+            <Link to="/tasks">About</Link>
+            <Link to="/tasks">Skills</Link>
+            <Link to="/tasks">Projects</Link>
+            <Link to="/tasks">Education</Link>
+            <Link to="/tasks">Contact</Link>
+        </>
+    )
     return (
         <nav className='max-w-7xl mx-auto h-16 flex justify-between items-center gap-3 px-5'>
             {/* left side logo and name */}
             <div className='flex items-center gap-6'>
                 <div>
-                    
+
                     <h1 className='text-2xl font-bold py-1 px-2 shadow border rounded flex items-center gap-2'>Mehedi</h1>
-                    
+
                 </div>
-                <div className='space-x-2'>
-                    <Link to="/tasks">Home</Link>
-                    <Link to="/tasks">About</Link>
-                    <Link to="/tasks">Skills</Link>
-                    <Link to="/tasks">Projects</Link>
-                    <Link to="/tasks">Education</Link>
-                    <Link to="/tasks">Contact</Link>
+                {/* Desktop nav item menu */}
+                <div className='hidden lg:block'>
+                    <ul className='space-x-2'>{navLinks}</ul>
                 </div>
             </div>
 
