@@ -22,7 +22,7 @@ export default function Banner() {
             </div>
 
             {/* Content */}
-            <div className="px-4">
+            <div className="px-4 md:px-8">
                 <div className="md:w-1/2 mx-auto flex justify-center items-center text-3xl lg:text-4xl text-blue-500 my-12">
                     <div className='flex gap-6'>
                         <FaReact title="React" />
