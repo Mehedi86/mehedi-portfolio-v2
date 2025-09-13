@@ -17,9 +17,8 @@ export default function About() {
           <div className='border rounded p-6'>
             <div className='flex items-center gap-4'>
               <BsFillFilePersonFill
-                className="text-[#9765ae] size-10 drop-shadow-[0_0_20px_rgba(151,101,174,0.8)]"
+                className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]"
               />
-
               <h1 className='text-2xl font-semibold'>Who am I</h1>
             </div>
             <p className="mt-4 text-base md:text-lg italic text-gray-700 dark:text-gray-200">
