@@ -6,14 +6,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { SiHackerrank } from "react-icons/si";
-import Marquee from "react-fast-marquee";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiNextdotjs, SiTailwindcss, SiJavascript } from "react-icons/si";
 
 export default function Banner() {
     const buttonClass = "bg-white text-black px-2 py-1 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"
     return (
-        <div className="relative flex items-center justify-center h-[calc(100vh-64px)] overflow-hidden ">
+        <div className="relative flex items-center justify-center h-[calc(100vh-64px)] overflow-hidden">
             {/* Background Blur Effect */}
             <div className="absolute inset-0 -z-10">
                 <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] rounded-full bg-pink-400 blur-[160px] opacity-60"></div>
