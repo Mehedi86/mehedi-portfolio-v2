@@ -17,7 +17,7 @@ export default function About() {
         <div className='grid lg:grid-cols-3 gap-12 my-12'>
           {/* Who I am */}
           <div className='card p-0.5'>
-            <div className="bg-white dark:bg-black p-6 rounded-lg border h-full">
+            <div className="bg-white dark:bg-black p-6 lg:p-8 rounded-lg border h-full">
               <div className='flex items-center gap-4'>
                 <BsFillFilePersonFill
                   className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]  dark:drop-shadow-[0_1px_1px_rgba(151,101,174,0.8)]"
@@ -40,7 +40,7 @@ export default function About() {
           </div>
           {/* What I do */}
           <div className='card p-0.5'>
-            <div className="bg-white dark:bg-black p-6 rounded-lg border h-full">
+            <div className="bg-white dark:bg-black p-6 lg:p-8 rounded-lg border h-full">
               <div className='flex items-center gap-4'>
                 <FaFileCode
                   className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]  dark:drop-shadow-[0_1px_1px_rgba(151,101,174,0.8)]"
@@ -63,12 +63,12 @@ export default function About() {
           </div>
           {/* What is my goal */}
           <div className='card p-0.5'>
-            <div className="bg-white dark:bg-black p-6 rounded-lg border h-full">
+            <div className="bg-white dark:bg-black p-6 lg:p-8 rounded-lg border h-full">
               <div className='flex items-center gap-4'>
                 <GoGoal
                   className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]  dark:drop-shadow-[0_1px_1px_rgba(151,101,174,0.8)]"
                 />
-                <h1 className='text-2xl font-semibold'>Who am I</h1>
+                <h1 className='text-2xl font-semibold'>What is my Goal</h1>
               </div>
               <p className="mt-6 text-base md:text-lg italic text-gray-700 dark:text-gray-200">
                 Websites have become an essential part of our daily lives, and I continue to see tremendous growth in this field. My goal is to contribute meaningfully to the web development industry — both as a problem solver and as an active community member. I strive to grow my own skills while supporting and inspiring others who are passionate about building innovative digital experiences.
