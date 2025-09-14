@@ -17,13 +17,22 @@ export default function About() {
           <div className='border rounded p-6'>
             <div className='flex items-center gap-4'>
               <BsFillFilePersonFill
-                className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]"
+                className="text-[#603f88] size-10 drop-shadow-[0_2px_4px_rgba(151,101,174,0.8)]  dark:drop-shadow-[0_1px_1px_rgba(151,101,174,0.8)]"
               />
               <h1 className='text-2xl font-semibold'>Who am I</h1>
             </div>
-            <p className="mt-4 text-base md:text-lg italic text-gray-700 dark:text-gray-200">
+            <p className="mt-6 text-base md:text-lg italic text-gray-700 dark:text-gray-200">
               A Junior Software Developer willing to work on valuable projects, achieving meaningful results that bring satisfaction, with a passion for problem-solving and a mindset without boundaries.
             </p>
+            <div className='my-6'>
+              <ul className='space-y-4 text-lg list-disc list-inside'>
+                <li>Full Name: Md. Abdullah Al Mehedi</li>
+                <li>Location: Dhaka, Bangladesh</li>
+                <li>Role: Junior Front-End Developer</li>
+                <li>Focus: MERN Stack & Problem Solving</li>
+                <li>Hobbies: Touring and exploring new things, places</li>
+              </ul>
+            </div>
           </div>
           {/* What I do */}
           <div></div>
