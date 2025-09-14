@@ -48,7 +48,7 @@ export default function About() {
 
               {/* Bottom box */}
               <div className="flex items-center gap-4 mt-auto">
-                <PiCertificateDuotone size={44} />
+                <PiCertificateDuotone className="text-amber-600" size={44} />
                 <h1 className="font-semibold">Certified</h1>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function About() {
 
               {/* Bottom box */}
               <div className="flex items-center gap-4 mt-auto">
-                <HiOutlineBadgeCheck className="text-green-700" size={44} />
+                <HiOutlineBadgeCheck className="text-green-500" size={44} />
                 <h1 className="font-semibold">Focused</h1>
               </div>
             </div>
