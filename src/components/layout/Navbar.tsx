@@ -24,7 +24,7 @@ const Navbar = () => {
     <>
       {/* Fixed Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
-        <div className="max-w-5/6 mx-auto h-16 flex justify-between items-center gap-3 px-5 relative border-b border-b-neutral-300 dark:border-none">
+        <div className="w-full lg:max-w-5/6 mx-auto h-16 flex justify-between items-center gap-3 px-5 relative border-b border-b-neutral-300 dark:border-none">
           {/* left side logo and name */}
           <div className="flex items-center gap-6">
             <div>
