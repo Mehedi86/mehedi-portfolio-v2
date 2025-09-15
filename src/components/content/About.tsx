@@ -8,7 +8,7 @@ import '../../cardStyle.css'
 
 export default function About() {
   return (
-    <div className='border-t border-neutral-200 dark:border-neutral-700 h-screen'>
+    <div className='border-t border-neutral-200 dark:border-neutral-700'>
       <div className='lg:max-w-5/6 mx-auto py-20 lg:py-30 px-4 lg:px-0'>
         <div>
           <h1 className='text-3xl lg:text-4xl font-bold'>Better to known: Behind the Code</h1>
@@ -18,7 +18,7 @@ export default function About() {
         </div>
 
         {/* Grid Section */}
-        <div className='grid lg:grid-cols-3 gap-12 my-12'>
+        <div className='grid lg:grid-cols-3 gap-12 mt-12'>
           {/* Who I am */}
           <div className='card p-0.5'>
             <div className="bg-white dark:bg-black p-6 lg:p-8 rounded-lg border h-full flex flex-col">

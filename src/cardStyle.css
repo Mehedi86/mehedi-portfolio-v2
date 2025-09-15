@@ -1,7 +1,8 @@
 .card {
   border-radius: 2px;
   position: relative;
-  --start-angle: 0deg; /* default */
+  --start-angle: 0deg;
+  /* default */
 }
 
 @property --angle {
@@ -32,11 +33,54 @@
 }
 
 @keyframes spin {
-  from { --angle: var(--start-angle); }
-  to   { --angle: calc(var(--start-angle) + 360deg); }
+  from {
+    --angle: var(--start-angle);
+  }
+
+  to {
+    --angle: calc(var(--start-angle) + 360deg);
+  }
 }
 
 /* Three cards with different starting angles */
-.card:nth-child(1) { --start-angle: 0deg; }
-.card:nth-child(2) { --start-angle: 180deg; }
-.card:nth-child(3) { --start-angle: 360deg; }
+.card:nth-child(1) {
+  --start-angle: 0deg;
+}
+
+.card:nth-child(2) {
+  --start-angle: 180deg;
+}
+
+.card:nth-child(3) {
+  --start-angle: 360deg;
+}
+
+
+/* card 2 */
+.card2 {
+  border-radius: 4px;
+  position: relative;
+  --start-angle: 0deg;
+  /* default */
+}
+
+.card2::after,
+.card2::before {
+  --angle: var(--start-angle);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 20%, rgba(202, 196, 196, 0.548));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 4px;
+  animation: 30s spin linear infinite;
+}
+
+.card2::before {
+  filter: blur(12rem);
+  opacity: 0.5;
+}
