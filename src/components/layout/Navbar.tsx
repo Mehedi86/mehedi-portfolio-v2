@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router'
 import { ModeToggle } from '../mode-toggler'
 import { FaBars, FaTimes } from "react-icons/fa"
@@ -13,8 +13,8 @@ const Navbar = () => {
     <>
       <Link className={linkClass} to="/tasks">Home</Link>
       <Link className={linkClass} to="/tasks">About</Link>
-      <Link className={linkClass} to="/tasks">Skills</Link>
       <Link className={linkClass} to="/tasks">Projects</Link>
+      <Link className={linkClass} to="/tasks">Skills</Link>
       <Link className={linkClass} to="/tasks">Education</Link>
       <Link className={linkClass} to="/tasks">Contact</Link>
     </>
@@ -49,11 +49,10 @@ const Navbar = () => {
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <span
-                className={`inline-block transition-transform duration-700 ${
-                  menuOpen
+                className={`inline-block transition-transform duration-700 ${menuOpen
                     ? "rotate-180 scale-110"
                     : "rotate-360 scale-100"
-                }`}
+                  }`}
               >
                 {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
               </span>
@@ -62,11 +61,10 @@ const Navbar = () => {
 
           {/* Mobile & Tablet Menu (absolute under navbar) */}
           <div
-            className={`lg:hidden absolute top-16 right-5 w-64 p-8 shadow-lg rounded bg-stone-200 dark:bg-stone-800 transition-all duration-300 text-black dark:text-white ${
-              menuOpen
+            className={`lg:hidden absolute top-16 right-5 w-64 p-8 shadow-lg rounded bg-stone-200 dark:bg-stone-800 transition-all duration-300 text-black dark:text-white ${menuOpen
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-4 pointer-events-none"
-            }`}
+              }`}
           >
             <ul className="flex flex-col gap-4">{navLinks}</ul>
           </div>

@@ -1,6 +1,7 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import '../../cardStyle.css'
+import { Link } from 'react-router';
 
 export default function MyWorks() {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -33,7 +34,7 @@ export default function MyWorks() {
           <div className='lg:w-1/2 mt-12 space-y-4'>
             {/* project1 */}
             <div className="p-2 lg:p-20 bg-project1 bg-black/60 object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer">
-              <img className='rounded' src="/projects/eventAura.PNG" alt="" />
+              <img className='rounded' src="/projects/eventAura1.PNG" alt="" />
               {/* project1 details */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                 <div className='text-white w-1/2'>
@@ -49,12 +50,14 @@ export default function MyWorks() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center">
-                <h1 className='text-neutral-200 text-2xl font-semibold'>View Details</h1>
-              </div>
+              <Link to="/projects/eventAura">
+                <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center">
+                  <h1 className='text-neutral-200 text-2xl font-semibold'>View Details</h1>
+                </div>
+              </Link>
             </div>
             <div className="p-2 lg:p-20 bg-project1 bg-black/60 object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer">
-              <img className='rounded' src="/projects/eventAura.PNG" alt="" />
+              <img className='rounded' src="/projects/eventAura1.PNG" alt="" />
               {/* project1 details */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                 <div className='text-white w-1/2'>
@@ -79,7 +82,7 @@ export default function MyWorks() {
           <div className='lg:w-1/2 mt-4 lg:mt-12 space-y-4'>
             {/* project1 */}
             <div className="p-2 lg:h-[300px] lg:p-20 bg-project1 bg-black/60 object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer">
-              <img className='rounded' src="/projects/eventAura.PNG" alt="" />
+              <img className='rounded' src="/projects/eventAura1.PNG" alt="" />
               {/* project1 details */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                 <div className='text-white w-1/2'>
@@ -100,7 +103,7 @@ export default function MyWorks() {
               </div>
             </div>
             <div className="p-2 lg:p-20 bg-project1 bg-black/60 object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer">
-              <img className='rounded' src="/projects/eventAura.PNG" alt="" />
+              <img className='rounded' src="/projects/eventAura1.PNG" alt="" />
               {/* project1 details */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                 <div className='text-white w-1/2'>
