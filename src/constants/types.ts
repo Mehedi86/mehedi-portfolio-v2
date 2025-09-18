@@ -10,4 +10,5 @@ export interface IProject {
   bgImage: string;
   liveLink: string;
   githubLink: string;
+  isBgRequired: boolean
 }

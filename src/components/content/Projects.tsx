@@ -1,9 +1,9 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import '../../cardStyle.css'
-import { Link } from 'react-router';
 import ProjectCard from '../cards/ProjectCard';
 import { projects } from '@/constants';
+import { LuGalleryVerticalEnd } from "react-icons/lu";
 
 export default function Projects() {
     const { ref, inView } = useInView({ triggerOnce: true });
@@ -42,12 +42,15 @@ export default function Projects() {
                     </div>
                     {/* right side box */}
                     <div className='lg:w-1/2 mt-4 lg:mt-0 space-y-4'>
-                        {projects.slice(2,4).map(project =>
+                        {projects.slice(2, 4).map(project =>
                             <ProjectCard
                                 key={project.id}
                                 project={project}
                             />)}
                     </div>
+                </div>
+                <div className='flex justify-center mt-20'>
+                    <button className="bg-white dark:bg-black dark:text-white border dark:border-neutral-600 border-neutral-200 text-black px-4 py-2 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"><LuGalleryVerticalEnd size={16} />See All Projects</button>
                 </div>
             </div>
         </div>

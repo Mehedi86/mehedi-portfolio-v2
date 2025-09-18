@@ -9,6 +9,7 @@ const Navbar = () => {
   const linkClass =
     "hover:bg-gray-100 px-2 py-2 rounded dark:text-white dark:hover:bg-gray-600"
 
+
   const navLinks = (
     <>
       <Link className={linkClass} to="/tasks">Home</Link>
@@ -50,8 +51,8 @@ const Navbar = () => {
             >
               <span
                 className={`inline-block transition-transform duration-700 ${menuOpen
-                    ? "rotate-180 scale-110"
-                    : "rotate-360 scale-100"
+                  ? "rotate-180 scale-110"
+                  : "rotate-360 scale-100"
                   }`}
               >
                 {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -62,8 +63,8 @@ const Navbar = () => {
           {/* Mobile & Tablet Menu (absolute under navbar) */}
           <div
             className={`lg:hidden absolute top-16 right-5 w-64 p-8 shadow-lg rounded bg-stone-200 dark:bg-stone-800 transition-all duration-300 text-black dark:text-white ${menuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-4 pointer-events-none"
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-4 pointer-events-none"
               }`}
           >
             <ul className="flex flex-col gap-4">{navLinks}</ul>

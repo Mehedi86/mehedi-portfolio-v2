@@ -14,6 +14,7 @@ export const projects: IProject[] = [
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract1.jpg',
+        isBgRequired: true
     },
     {
         id: 'project2',
@@ -27,7 +28,8 @@ export const projects: IProject[] = [
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
-        bgImage: '/projects/abstract1.jpg',
+        bgImage: '/projects/abstract6.jpg',
+        isBgRequired: true
     },
     {
         id: 'project3',
@@ -35,13 +37,14 @@ export const projects: IProject[] = [
         routeName: 'buddyGarage',
         previewImages:
             ['/projects/buddyGarage1.PNG'],
-        cardHeight: 'lg:h-[150px] xl:h-[280px]',
+        cardHeight: 'lg:h-[300px] xl:h-[350px]',
         description: 'A car servicing platform, can book service through online and also take suggetion',
         features: 'BuddyGarage is an online car service platform that allows users to book and manage car maintenance easily. Users can schedule appointments, track service status, and receive reminders. The system streamlines garage operations, providing real-time updates, service history, and hassle-free vehicle maintenance management.',
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
-        bgImage: '/projects/abstract1.jpg',
+        bgImage: 'none',
+        isBgRequired: false
     },
     {
         id: 'project4',
@@ -56,5 +59,6 @@ export const projects: IProject[] = [
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract1.jpg',
+        isBgRequired: true
     }
 ]

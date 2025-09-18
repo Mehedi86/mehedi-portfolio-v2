@@ -4,10 +4,15 @@ import { Link } from 'react-router'
 
 export default function ProjectCard({ project }: { project: IProject }) {
     console.log(project)
-    const { name, description, technologies, routeName, cardHeight, previewImages } = project;
+    const { name, description, technologies, routeName, cardHeight, previewImages, bgImage, isBgRequired } = project;
     const stackClass = "bg-neutral-400 text-black px-2 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"
     return (
-        <div className="p-2 md:p-10 lg:p-20 bg-project1 bg-black/60 object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer">
+        <div className={`${isBgRequired ? 'p-2 md:p-10 lg:p-20 bg-black/60' : 'overflow-hidden'}  object-cover rounded lg:rounded-lg relative overflow-hidden shadow-lg group cursor-pointer`}
+            style={isBgRequired ? {
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${bgImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            } : undefined}>
             <div className={cardHeight}>
                 <img className='rounded w-full h-full' src={previewImages[0]} alt="" />
             </div>
