@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layout/MainLayout";
 import Home from "@/pages/Home";
-import EventAura from "@/projects/EventAura";
+import ProjectDetails from "@/projects/ProjectDetails";
 
 export const router = createBrowserRouter([
     {
@@ -13,8 +13,8 @@ export const router = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: "/projects/eventAura",
-                element: <EventAura/>
+                path: "/projects/:projectRoute",
+                element: <ProjectDetails/>
             }
         ]
     }
