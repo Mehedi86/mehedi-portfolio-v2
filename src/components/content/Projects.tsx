@@ -32,23 +32,8 @@ export default function Projects() {
                         </div>
                     </div>
                     {/* main box */}
-                    <div className='mt-12 lg:flex gap-4'>
-                        {/* left side box */}
-                        <div className='lg:w-1/2 space-y-4'>
-                            {projects.slice(0, 2).map(project =>
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                />)}
-                        </div>
-                        {/* right side box */}
-                        <div className='lg:w-1/2 mt-4 lg:mt-0 space-y-4'>
-                            {projects.slice(2, 4).map(project =>
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                />)}
-                        </div>
+                    <div className='grid grid-cols-4 gap-4 mt-12'>
+                        {projects.map(project => <ProjectCard key={project.id} project={project} />)}
                     </div>
                     <div className='flex justify-center mt-20'>
                         <button className="bg-white dark:bg-black dark:text-white border dark:border-neutral-600 border-neutral-200 text-black px-4 py-2 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"><LuGalleryVerticalEnd size={16} />See All Projects</button>
