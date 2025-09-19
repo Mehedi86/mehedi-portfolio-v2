@@ -24,7 +24,7 @@ export default function Projects() {
                         {/* Project counter */}
                         <div className="text-right card2 p-4 border">
                             <h1 className="text-3xl lg:text-4xl font-bold">
-                                {inView && <CountUp end={2} duration={4} />}
+                                {inView && <CountUp end={4} duration={4} />}
                             </h1>
                             <p className="uppercase text-sm md:text-base tracking-widest mt-2">
                                 Projects
@@ -32,7 +32,7 @@ export default function Projects() {
                         </div>
                     </div>
                     {/* main box */}
-                    <div className='grid grid-cols-4 gap-4 mt-12'>
+                    <div className='md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12'>
                         {projects.map(project => <ProjectCard key={project.id} project={project} />)}
                     </div>
                     <div className='flex justify-center mt-20'>
