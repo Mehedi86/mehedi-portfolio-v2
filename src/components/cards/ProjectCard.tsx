@@ -7,10 +7,13 @@ export default function ProjectCard({ project }: { project: IProject }) {
     const { name, description, technologies, routeName, cardHeight, previewImages, bgImage, isBgRequired } = project;
     const stackClass = "bg-neutral-400 text-black px-2 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"
     return (
-        <div className='py-6 md:py-4 lg:py-0 border-b-2 border-neutral-400 dark:border-neutral-600 md:border-none'>
-            <div>
-                <img className='w-full h-[200px]' src={previewImages[0]} alt="" />
-            </div>
+        <div className=''>
+            <Link to={`/projects/${routeName}`}>
+                <div className='hover:scale-110 transition duration-300'>
+                    <img className='w-full h-[200px]' src={previewImages[0]} alt="" />
+                </div>
+            </Link>
+            <div className='my-6 md:my-4 lg:my-0 border-t-2 border-neutral-400 dark:border-neutral-600 lg:border-none  w-1/2 mx-auto'></div>
         </div>
     )
 }
