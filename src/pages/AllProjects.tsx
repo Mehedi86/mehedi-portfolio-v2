@@ -21,9 +21,9 @@ export default function AllProjects() {
                 <div className='md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12'>
                     {projects.map(project => <ProjectCard key={project.id} project={project} />)}
                 </div>
-                <div className='flex justify-center mt-20'>
+                {/* <div className='flex justify-center mt-20'>
                     <button className="bg-white dark:bg-black dark:text-white border dark:border-neutral-600 border-neutral-200 text-black px-4 py-2 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"><LuGalleryVerticalEnd size={16} />See All Projects</button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

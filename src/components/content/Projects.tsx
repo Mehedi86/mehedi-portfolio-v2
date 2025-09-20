@@ -10,7 +10,7 @@ export default function Projects() {
     const { ref, inView } = useInView({ triggerOnce: true });
 
     return (
-        <div className='relative class="header finisher-header" style="width: 100%; height: 1200px;"'>
+        <div className=''>
             <div className="border-t border-neutral-200 dark:border-neutral-700 z-10">
                 <div className="lg:max-w-5/6 mx-auto py-20 px-4 lg:px-0">
                     <div ref={ref} className="flex justify-between items-center border-b pb-4">
