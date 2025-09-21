@@ -93,33 +93,43 @@ export const projects: IProject[] = [
 ]
 export const logoImg = [
     {
-        imgPath: '/3d/react.png'
+        imgPath: '/3d/react.png',
+        name: 'react'
     },
     {
-        imgPath: '/3d/next.PNG'
+        imgPath: '/3d/next.PNG',
+        name: 'next'
     },
     {
-        imgPath: '/3d/node.png'
+        imgPath: '/3d/redux.png',
+        name: 'redux'
     },
     {
-        imgPath: '/3d/redux.png'
+        imgPath: '/3d/node.png',
+        name: 'node'
     },
     {
-        imgPath: '/3d/mongodb.png'
+        imgPath: '/3d/mongodb.png',
+        name: 'mongodb'
     },
     {
-        imgPath: '/3d/postgres.png'
+        imgPath: '/3d/postgres.png',
+        name: 'postgres'
     },
     {
-        imgPath: '/3d/sql.png'
+        imgPath: '/3d/sql.png',
+        name: 'sql'
     },
     {
-        imgPath: '/3d/tailwind.png'
+        imgPath: '/3d/tailwind.png',
+        name: 'tailwind'
     },
     {
-        imgPath: '/3d/git.svg'
+        imgPath: '/3d/git.svg',
+        name: 'git'
     },
     {
-        imgPath: '/3d/firebase.png'
+        imgPath: '/3d/firebase.png',
+        name: 'firebase'
     }
 ]
