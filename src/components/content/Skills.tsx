@@ -11,8 +11,8 @@ export default function Skills() {
                 {/* ✅ Foreground Content Layer */}
                 <div>
                     <div>
-                        <h1 className='text-3xl lg:text-4xl font-bold'>My Skillset</h1>
-                        <p className="mt-4 text-base md:text-lg italic text-gray-700 dark:text-gray-200">
+                        <h1 className='text-3xl lg:text-4xl font-bold text-white'>My Skillset</h1>
+                        <p className="mt-4 text-base md:text-lg italic text-gray-200">
                             Here are some important things to know about me as a person and developer, beyond just the code I write.
                         </p>
                     </div>
