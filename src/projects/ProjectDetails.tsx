@@ -97,9 +97,9 @@ export default function ProjectDetails() {
 
         <div className='border-b border-neutral-600 py-6'>
           <h1 className='text-2xl font-semibold'>Features and Functionality</h1>
-          <p className="pt-3 text-sm md:text-base leading-relaxed">
+          <ul className='list-disc pl-6 space-y-1 pt-2'>
             {features?.map((feature, idx) => <li key={idx}>{feature}</li>)}
-          </p>
+          </ul>
         </div>
 
         <div className='border-b border-neutral-600 py-6'>
