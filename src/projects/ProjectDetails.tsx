@@ -77,7 +77,7 @@ export default function ProjectDetails() {
                 <img
                   src={imgPath}
                   alt={`Preview ${idx}`}
-                  className="w-full h-full object-cover cursor-pointer"
+                  className="w-full h-full object-fit cursor-pointer"
                   onClick={() => setFullscreenImg(imgPath)}
                 />
               </SwiperSlide>
@@ -98,7 +98,7 @@ export default function ProjectDetails() {
         <div className='border-b border-neutral-600 py-6'>
           <h1 className='text-2xl font-semibold'>Features and Functionality</h1>
           <p className="pt-3 text-sm md:text-base leading-relaxed">
-            {features}
+            {features?.map((feature, idx) => <li key={idx}>{feature}</li>)}
           </p>
         </div>
 

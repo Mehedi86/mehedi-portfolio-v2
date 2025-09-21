@@ -2,7 +2,7 @@ export interface IProject {
   id: string;
   name: string;
   description: string;
-  features: string;
+  features: string[];
   technologies: string[];
   routeName: string;
   cardHeight: string;

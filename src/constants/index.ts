@@ -9,7 +9,13 @@ export const projects: IProject[] = [
             ['/projects/eventAura1.PNG'],
         cardHeight: '',
         description: 'An event booking application for managing and reserving events.',
-        features: 'EventAura is a smart event management system that helps organize, manage, and track events seamlessly — from planning to execution — ensuring smooth coordination, better engagement, and a hassle-free experience.',
+        features: [
+            "Organize and manage events seamlessly",
+            "Track events from planning to execution",
+            "Ensure smooth coordination among participants",
+            "Enhance audience engagement and interaction",
+            "Provide a hassle-free event management experience"
+        ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
@@ -18,13 +24,20 @@ export const projects: IProject[] = [
     },
     {
         id: 'project2',
-        name: 'EventAura',
-        routeName: 'eventAura',
+        name: 'Edulab',
+        routeName: 'eduLab',
         previewImages:
             ['/projects/edulab1.PNG'],
         cardHeight: '',
-        description: 'An event booking application for managing and reserving events.',
-        features: 'EventAura is a smart event management system that helps organize, manage, and track events seamlessly — from planning to execution — ensuring smooth coordination, better engagement, and a hassle-free experience.',
+        description: 'A smart library management system designed to manage books, members, and borrowing activities efficiently.',
+        features: [
+            "Manage books with details like title, author, and category",
+            "User-friendly member registration and profile management",
+            "Borrowing and returning system with due date tracking",
+            "Search and filter books easily",
+            "Admin dashboard for monitoring library activities"
+        ]
+        ,
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
@@ -39,7 +52,15 @@ export const projects: IProject[] = [
             ['/projects/buddyGarage1.PNG'],
         cardHeight: 'lg:h-[190px] xl:h-[180px] 2xl:h-[250px]',
         description: 'A car servicing platform, can book service through online and also take suggetion',
-        features: 'BuddyGarage is an online car service platform that allows users to book and manage car maintenance easily. Users can schedule appointments, track service status, and receive reminders. The system streamlines garage operations, providing real-time updates, service history, and hassle-free vehicle maintenance management.',
+        features: [
+            "Book and manage car maintenance services online",
+            "Schedule service appointments with ease",
+            "Track real-time service status updates",
+            "Receive automated service reminders",
+            "Access complete vehicle service history",
+            "Streamline garage operations for efficiency",
+            "Enjoy hassle-free vehicle maintenance management"
+        ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
@@ -48,13 +69,21 @@ export const projects: IProject[] = [
     },
     {
         id: 'project4',
-        name: 'EventAura',
-        routeName: 'eventAura',
+        name: 'SpendSence',
+        routeName: 'spendSence',
         previewImages:
             ['/projects/spendSence1.PNG'],
         cardHeight: 'lg:h-[240px] xl:h-[250px] 2xl:h-[350px]',
         description: 'An event booking application for managing and reserving events.',
-        features: 'EventAura is a smart event management system that helps organize, manage, and track events seamlessly — from planning to execution — ensuring smooth coordination, better engagement, and a hassle-free experience.',
+        features: [
+            "Record and track daily expenses easily",
+            "Categorize expenses for better financial insights",
+            "View spending summaries and analytics",
+            "Set monthly budgets and monitor limits",
+            "Track income alongside expenses",
+            "Visualize data with charts and reports",
+            "Secure user accounts with authentication"
+        ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
         liveLink: 'https://event-management-ten-topaz.vercel.app',
         githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
