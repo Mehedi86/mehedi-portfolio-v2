@@ -91,3 +91,35 @@ export const projects: IProject[] = [
         isBgRequired: false
     }
 ]
+export const logoImg = [
+    {
+        imgPath: '/3d/react.png'
+    },
+    {
+        imgPath: '/3d/next.PNG'
+    },
+    {
+        imgPath: '/3d/node.png'
+    },
+    {
+        imgPath: '/3d/redux.png'
+    },
+    {
+        imgPath: '/3d/mongodb.png'
+    },
+    {
+        imgPath: '/3d/postgres.png'
+    },
+    {
+        imgPath: '/3d/sql.png'
+    },
+    {
+        imgPath: '/3d/tailwind.png'
+    },
+    {
+        imgPath: '/3d/git.svg'
+    },
+    {
+        imgPath: '/3d/firebase.png'
+    }
+]
