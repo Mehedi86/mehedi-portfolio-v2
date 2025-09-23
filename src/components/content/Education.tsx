@@ -1,4 +1,4 @@
-import { edu } from '@/constants'
+import { eduInfo } from '@/constants'
 
 export default function Education() {
     return (
@@ -14,7 +14,7 @@ export default function Education() {
                 {/* main section */}
                 <div className='mt-12'>
                     <div>
-                        {edu.map((item, idx) => (
+                        {eduInfo.map((item, idx) => (
                                 <div key={idx} className="flex items-start gap-6">
                                     {/* Timeline + GlowCard */}
                                     <div className="xl:w-2/6 w-full">

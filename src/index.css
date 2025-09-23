@@ -139,3 +139,7 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+  .exp-card-wrapper {
+    @apply flex  xl:flex-row xl:gap-20 gap-10;
+  }

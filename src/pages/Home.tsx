@@ -4,6 +4,7 @@ import Banner from '@/components/Header/Banner'
 import ParallaxDemo from './ParallaxDemo'
 import Skills from '@/components/content/Skills'
 import Education from '@/components/content/Education'
+import EducationDemo from '@/components/content/EducationDemo'
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
           {/* <ParallaxDemo /> */}
           <Skills/>
           <Education/>
+          <EducationDemo/>
         </div>
       </div>
     </div>

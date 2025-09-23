@@ -134,7 +134,7 @@ export const logoImg = [
     }
 ]
 
-export const edu = [
+export const eduInfo = [
     {
         institute_name: 'Daffodil International University',
         logoPath: '/diu.png',
