@@ -1,4 +1,4 @@
-import React from 'react'
+import { edu } from '@/constants'
 
 export default function Education() {
     return (
@@ -13,7 +13,33 @@ export default function Education() {
                 </div>
                 {/* main section */}
                 <div className='mt-12'>
-
+                    {/* Timeline Section */}
+                    <div className="mt-20 relative">
+                        <div className="relative z-50 xl:space-y-10 space-y-10">
+                            {edu.map((item, idx) => (
+                                <div key={idx} className="flex items-start gap-6">
+                                    {/* Timeline + GlowCard */}
+                                    <div className="xl:w-2/6 w-full">
+                                        <div className="flex items-center gap-4 p-6">
+                                            <img
+                                                src={item.logoPath}
+                                                alt={item.institute_name}
+                                                className="w-20 h-20 object-contain"
+                                            />
+                                            <div>
+                                                <h1 className="font-semibold text-xl">
+                                                    {item.institute_name}
+                                                </h1>
+                                                <p className="text-gray-500 dark:text-gray-300">
+                                                    🗓️ {item.duration}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -133,3 +133,22 @@ export const logoImg = [
         name: 'firebase'
     }
 ]
+
+export const edu = [
+    {
+        institute_name: 'Daffodil International University',
+        logoPath: '/diu.png',
+        duration: '2021-2024',
+    },
+    {
+        institute_name: 'Bogura Polytechnic Institute',
+        logoPath: '/bogura.png',
+        duration: '2016-2021',
+    },
+    {
+        institute_name: 'Rani BilasMoni Govt. Boys High School',
+        logoPath: '/rani.png',
+        duration: '2011-2016',
+    }
+
+]
