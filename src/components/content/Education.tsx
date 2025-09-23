@@ -13,10 +13,8 @@ export default function Education() {
                 </div>
                 {/* main section */}
                 <div className='mt-12'>
-                    {/* Timeline Section */}
-                    <div className="mt-20 relative">
-                        <div className="relative z-50 xl:space-y-10 space-y-10">
-                            {edu.map((item, idx) => (
+                    <div>
+                        {edu.map((item, idx) => (
                                 <div key={idx} className="flex items-start gap-6">
                                     {/* Timeline + GlowCard */}
                                     <div className="xl:w-2/6 w-full">
@@ -38,7 +36,6 @@ export default function Education() {
                                     </div>
                                 </div>
                             ))}
-                        </div>
                     </div>
                 </div>
             </div>
