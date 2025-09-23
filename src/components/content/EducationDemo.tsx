@@ -1,10 +1,48 @@
 import { eduInfo } from "@/constants";
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
+gsap.registerPlugin(ScrollTrigger)
 
 export default function EducationDemo() {
+    useGSAP(() => {
+        gsap.utils.toArray('.timeline-card').forEach((card) => {
+            gsap.from(card, {
+                xPercent: -100,
+                opacity: 0,
+                transformOrigin: 'left left',
+                duration: 1,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                }
+            })
+        })
+
+        gsap.to('.timeline', {
+            transformOrigin: 'bottom bottom',
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: ".timeline",
+                start: "top center",
+                end: "70% center",
+                // Update the animation as the user scrolls
+                onUpdate: (self) => {
+                    // Scale the timeline height as the user scrolls
+                    // from 1 to 0 as the user scrolls up the screen
+                    gsap.to(".timeline", {
+                        scaleY: 1 - self.progress,
+                    });
+                },
+            }
+        })
+    }, [])
+
+
     return (
-        <div>
+        <div className="pb-60">
             <div id='education' className='lg:max-w-5/6 mx-auto py-20 lg:py-30 px-4 lg:px-0'>
                 {/* header */}
                 <div>
@@ -19,8 +57,8 @@ export default function EducationDemo() {
                     <div className='relative z-50 xl:space-y-32 space-y-10'>
                         {eduInfo.map((edu) => (
                             <div key={edu.institute_name} className='exp-card-wrapper'>
-                                <div className="xl:w-2/6 w-full">
-                                    <div className="flex items-center gap-4 p-6">
+                                <div className="xl:w-2/6 w-full timeline-card ">
+                                    <div className="xl:flex items-center gap-4 p-6 ml-20">
                                         <img
                                             src={edu.logoPath}
                                             alt={edu.institute_name}
@@ -37,16 +75,16 @@ export default function EducationDemo() {
                                     </div>
                                 </div>
                                 <div className="xl:4/6">
-                                    <div className="flex items-center">
+                                    <div className="flex items-start">
                                         <div className="timeline-wrapper">
                                             <div className="timeline" />
-                                            <div className="gradient-line w-1 h-full" />
+                                            <div className="gradient-line mt-12 w-1 h-full" />
                                         </div>
                                         <div className="flex items-center xl:gap-10 md:gap-10 gap-5 relative z-20">
                                             <div className="timeline-logo">
                                                 <img className="w-16 h-16 rounded-full" src={edu.logoPath} alt="" />
                                             </div>
-                                            <div>
+                                            <div className="p-6 border rounded">
                                                 <h1>This is the details of the institution I have read in</h1>
                                                 <ul>
                                                     <li>Number 1</li>
