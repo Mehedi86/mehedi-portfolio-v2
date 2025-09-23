@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* left side logo and name */}
           <div className="flex items-center gap-6">
             <div>
-              <h1 className="text-2xl font-bold py-1 px-2 shadow border rounded flex items-center gap-2 cursor-pointer">
+              <h1 className="text-2xl font-bold py-1 px-2 shadow border rounded flex items-center gap-2 cursor-pointer text-neutral-400">
                 Mehedi
               </h1>
             </div>

@@ -3,6 +3,7 @@ import Projects from '@/components/content/Projects'
 import Banner from '@/components/Header/Banner'
 import ParallaxDemo from './ParallaxDemo'
 import Skills from '@/components/content/Skills'
+import Education from '@/components/content/Education'
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
           <Projects />
           {/* <ParallaxDemo /> */}
           <Skills/>
+          <Education/>
         </div>
       </div>
     </div>
