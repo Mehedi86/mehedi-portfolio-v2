@@ -53,7 +53,7 @@ export default function EducationDemo() {
                     </p>
                 </div>
 
-                <div className='mt-12 relative'>
+                <div className='mt-12'>
                     <div className='relative z-50 xl:space-y-32 space-y-10'>
                         {eduInfo.map((edu) => (
                             <div key={edu.institute_name} className='exp-card-wrapper'>
@@ -78,7 +78,7 @@ export default function EducationDemo() {
                                     <div className="flex items-start">
                                         <div className="timeline-wrapper">
                                             <div className="timeline" />
-                                            <div className="gradient-line mt-12 w-1 h-full" />
+                                            <div className="gradient-line mt-4 w-1 h-full" />
                                         </div>
                                         <div className="flex items-center xl:gap-10 md:gap-10 gap-5 relative z-20">
                                             <div className="timeline-logo">

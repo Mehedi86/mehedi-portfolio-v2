@@ -22,7 +22,7 @@ export default function Home() {
           <Projects />
           {/* <ParallaxDemo /> */}
           <Skills/>
-          <Education/>
+          {/* <Education/> */}
           <EducationDemo/>
         </div>
       </div>
