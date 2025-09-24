@@ -135,20 +135,37 @@ export const logoImg = [
 ]
 
 export const eduInfo = [
-    {
-        institute_name: 'Daffodil International University',
-        logoPath: '/diu.png',
-        duration: '2021-2024',
-    },
-    {
-        institute_name: 'Bogura Polytechnic Institute',
-        logoPath: '/bogura.png',
-        duration: '2016-2021',
-    },
-    {
-        institute_name: 'Rani BilasMoni Govt. Boys High School',
-        logoPath: '/rani.png',
-        duration: '2011-2016',
-    }
-
-]
+  {
+    institute_name: 'Daffodil International University',
+    logoPath: '/diu.png',
+    duration: '2021 - 2024',
+    level: 'University',
+    description: [
+      'Completed Bachelor of Science in Computer Science and Engineering (CSE).',
+      'Gained knowledge in core areas such as Computer Networking, Peripheral Devices, Database Management Systems (DBMS), and System Analysis.',
+      'Built a strong technical foundation through academic projects and coursework.'
+    ]
+  },
+  {
+    institute_name: 'Bogura Polytechnic Institute',
+    logoPath: '/bogura.png',
+    duration: '2016 - 2021',
+    level: 'College',
+    description: [
+      'Chose a technical path over traditional fields, enrolling in a leading technical college in Bogura.',
+      'Discovered the vast opportunities within Computer Science and Engineering.',
+      'Developed strong motivation to pursue higher studies and build a career in CSE.'
+    ]
+  },
+  {
+    institute_name: 'Rani BilasMoni Govt. Boys High School',
+    logoPath: '/rani.png',
+    duration: '2011 - 2016',
+    level: 'High School',
+    description: [
+      'First exposure to computers through the school’s small computer lab.',
+      'Spent tiffin breaks exploring computers, despite limited resources.',
+      'Sparked curiosity and nurtured early interest in technology and computing.'
+    ]
+  }
+];

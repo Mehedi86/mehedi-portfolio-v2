@@ -84,13 +84,11 @@ export default function EducationDemo() {
                                             <div className="timeline-logo">
                                                 <img className="w-16 h-16 rounded-full" src={edu.logoPath} alt="" />
                                             </div>
-                                            <div className="p-6 border rounded">
-                                                <h1>This is the details of the institution I have read in</h1>
-                                                <ul>
-                                                    <li>Number 1</li>
-                                                    <li>Number 2</li>
-                                                    <li>Number 3</li>
-                                                </ul>
+                                            <div className="p-6 border rounded ml-2 md:ml-0">
+                                                <h1 className="text-2xl font-bold">{edu.level}</h1>
+                                                <div className="max-w-[250px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[610px] pl-4 pt-2">
+                                                    {edu.description.map((des, idx)=> <li key={idx}>{des}</li>)}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
