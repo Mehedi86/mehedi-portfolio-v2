@@ -42,7 +42,7 @@ export default function EducationDemo() {
 
 
     return (
-        <div className="pb-60">
+        <div>
             <div id='education' className='lg:max-w-5/6 mx-auto py-20 lg:py-30 px-4 lg:px-0'>
                 {/* header */}
                 <div>
