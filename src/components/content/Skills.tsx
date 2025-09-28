@@ -1,6 +1,4 @@
 import { logoImg } from '@/constants'
-import React from 'react'
-import earthBg from '/images/earth.jpg' // make sure the path is correct
 
 export default function Skills() {
     return (
