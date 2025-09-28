@@ -24,7 +24,7 @@ export default function Skills() {
                                 className="w-full h-60 
                             flex flex-col items-center justify-center gap-2 lg:gap-4
                             shadow-md hover:shadow-xl transform hover:scale-105 
-                            transition duration-300 group animate-fade-in p-4 md:p-8 lg:p-12 xl:p-16 "
+                            transition duration-300 group animate-fade-in p-8 md:p-12 lg:p-16"
                                 style={{ animationDelay: `${idx * 100}ms` }}
                             >
                                 <img

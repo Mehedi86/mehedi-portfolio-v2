@@ -9,7 +9,7 @@ import '../../cardStyle.css'
 export default function About() {
   return (
     <div className='border-t border-neutral-200 dark:border-neutral-700'>
-      <div className='lg:max-w-5/6 mx-auto py-20 lg:py-30 px-4 lg:px-0'>
+      <div className='lg:max-w-5/6 mx-auto pt-20 lg:pt-30 px-4 lg:px-0'>
         <div>
           <h1 className='text-3xl lg:text-4xl font-bold'>Better to known: Behind the Code</h1>
           <p className="mt-4 text-base md:text-lg italic text-gray-700 dark:text-gray-200">

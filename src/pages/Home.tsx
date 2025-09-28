@@ -1,10 +1,11 @@
 import About from '@/components/content/About'
 import Projects from '@/components/content/Projects'
 import Banner from '@/components/Header/Banner'
-import ParallaxDemo from './ParallaxDemo'
 import Skills from '@/components/content/Skills'
 import Education from '@/components/content/Education'
-import EducationDemo from '@/components/content/EducationDemo'
+import CertificateBtn from '@/components/content/CertificateBtn'
+import '../../bgStyle.css'
+import Contact from '@/components/content/Contact'
 
 
 
@@ -19,11 +20,11 @@ export default function Home() {
         <div>
           <Banner />
           <About />
+          <CertificateBtn/>
           <Projects />
-          {/* <ParallaxDemo /> */}
           <Skills/>
-          {/* <Education/> */}
-          <EducationDemo/>
+          <Education/>
+          <Contact/>
         </div>
       </div>
     </div>
