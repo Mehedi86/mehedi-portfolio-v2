@@ -8,6 +8,7 @@ import { FaDiscord } from "react-icons/fa";
 import { SiHackerrank } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiNextdotjs, SiTailwindcss, SiJavascript } from "react-icons/si";
+import { Link } from 'react-router';
 
 export default function Banner() {
     const buttonClass = "bg-white text-black px-2 py-1 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"
@@ -45,16 +46,17 @@ export default function Banner() {
 
                     <div className='my-4 flex gap-4 flex-wrap'>
                         <button className={`${buttonClass}`}><MdOutlineContacts size={16} /> Contact Me</button>
-                        <button className={`${buttonClass}`}><GoProjectSymlink size={16} />View Projects</button>
-                        <button className={`${buttonClass}`}><SiReaddotcv size={16} />Download Resume</button>
+                        <Link to="/projects" className={`${buttonClass}`} target="_blank"><GoProjectSymlink size={16} />View Projects</Link>
+                        <Link to="https://drive.google.com/file/d/1sFGRoii51gD0Zhrym5w7ZzS0c7SfQbJ2/view?usp=sharing" className={`${buttonClass}`} target="_blank"><SiReaddotcv size={16} />Download Resume</Link>
                     </div>
                     {/* social links */}
                     <div className='flex w-1/2 md:w-1/3 mx-auto justify-between items-center my-12'>
-                        <FaGithub size={28} />
-                        <FaLinkedin size={28} />
+                        <Link to="https://github.com/Mehedi86" target="_blank"><FaGithub size={28} /></Link>
+
+                        <Link to="https://www.linkedin.com/in/mahdi866" target="_blank"><FaLinkedin size={28} /></Link>
                         <div className='bg-black w-0.5 h-10'></div>
-                        <FaDiscord size={32} />
-                        <SiHackerrank size={28} />
+                        <Link to="https://discord.com/channels/706997778190172271/706997778190172274" target="_blank"><FaDiscord size={32} /></Link>
+                        <Link to="https://www.hackerrank.com/profile/abdullahalmehed1" target="_blank"><SiHackerrank size={28} /></Link>
                     </div>
                 </div>
             </div>
