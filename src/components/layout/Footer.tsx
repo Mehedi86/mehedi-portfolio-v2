@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiHackerrank } from 'react-icons/si'
 import { Link } from 'react-router'

@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Education() {
     useGSAP(() => {
-        gsap.utils.toArray('.timeline-card').forEach((card) => {
+        gsap.utils.toArray<HTMLElement>('.timeline-card').forEach((card) => {
             gsap.from(card, {
                 xPercent: -100,
                 opacity: 0,

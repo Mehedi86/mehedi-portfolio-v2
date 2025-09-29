@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdOutlineContacts } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
 import { SiReaddotcv } from "react-icons/si";

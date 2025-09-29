@@ -1,5 +1,4 @@
 import { projects } from '@/constants';
-import { LuGalleryVerticalEnd } from "react-icons/lu";
 import ProjectCard from '@/components/cards/ProjectCard';
 
 export default function AllProjects() {
