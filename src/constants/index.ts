@@ -17,10 +17,17 @@ export const projects: IProject[] = [
             "Provide a hassle-free event management experience"
         ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        liveLink: 'https://event-management-ten-topaz.vercel.app',
-        githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract1.jpg',
-        isBgRequired: false
+        isBgRequired: false,
+        siteInfo: {
+            liveLink: 'https://event-management-ten-topaz.vercel.app',
+            codes: [
+                {
+                    type: 'Code',
+                    link: 'https://github.com/Mehedi86/event-aura-project-3'
+                }
+            ]
+        }
     },
     {
         id: 'project2',
@@ -39,10 +46,21 @@ export const projects: IProject[] = [
         ]
         ,
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        liveLink: 'https://event-management-ten-topaz.vercel.app',
-        githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract2.jpg',
-        isBgRequired: true
+        isBgRequired: true,
+        siteInfo: {
+            liveLink: 'https://silly-cobbler-5517a0.netlify.app/',
+            codes: [
+                {
+                    type: 'Frontend',
+                    link: 'https://github.com/Mehedi86/assignment-eleven'
+                },
+                {
+                    type: 'Backend',
+                    link: 'https://github.com/Mehedi86/assignment-eleven-server'
+                }
+            ]
+        }
     },
     {
         id: 'project3',
@@ -62,10 +80,17 @@ export const projects: IProject[] = [
             "Enjoy hassle-free vehicle maintenance management"
         ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        liveLink: 'https://event-management-ten-topaz.vercel.app',
-        githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract2.jpg',
-        isBgRequired: true
+        isBgRequired: true,
+        siteInfo: {
+            liveLink: 'https://buddy-Garage-ten-topaz.vercel.app',
+            codes: [
+                {
+                    type: 'Code',
+                    link: 'https://github.com/Mehedi86/buddy-garage'
+                }
+            ]
+        }
     },
     {
         id: 'project4',
@@ -85,12 +110,21 @@ export const projects: IProject[] = [
             "Secure user accounts with authentication"
         ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        liveLink: 'https://event-management-ten-topaz.vercel.app',
-        githubLink: 'https://github.com/Mehedi86/event-aura-project-3',
         bgImage: '/projects/abstract1.jpg',
-        isBgRequired: false
+        isBgRequired: false,
+        siteInfo: {
+            liveLink: 'https://event-management-ten-topaz.vercel.app',
+            codes: [
+                {
+                    type: 'Code',
+                    link: 'https://github.com/Mehedi86/event-aura-project-3'
+                }
+            ]
+        }
     }
 ]
+
+
 export const logoImg = [
     {
         imgPath: '/3d/react.png',
@@ -135,37 +169,58 @@ export const logoImg = [
 ]
 
 export const eduInfo = [
-  {
-    institute_name: 'Daffodil International University',
-    logoPath: '/diu.png',
-    duration: '2021 - 2024',
-    level: 'University',
-    description: [
-      'Completed Bachelor of Science in Computer Science and Engineering (CSE).',
-      'Gained knowledge in core areas such as Computer Networking, Peripheral Devices, Database Management Systems (DBMS), and System Analysis.',
-      'Built a strong technical foundation through academic projects and coursework.'
-    ]
-  },
-  {
-    institute_name: 'Bogura Polytechnic Institute',
-    logoPath: '/bogura.png',
-    duration: '2016 - 2021',
-    level: 'College',
-    description: [
-      'Chose a technical path over traditional fields, enrolling in a leading technical college in Bogura.',
-      'Discovered the vast opportunities within Computer Science and Engineering.',
-      'Developed strong motivation to pursue higher studies and build a career in CSE.'
-    ]
-  },
-  {
-    institute_name: 'Rani BilasMoni Govt. Boys High School',
-    logoPath: '/rani.png',
-    duration: '2011 - 2016',
-    level: 'High School',
-    description: [
-      'First exposure to computers through the school’s small computer lab.',
-      'Spent tiffin breaks exploring computers, despite limited resources.',
-      'Sparked curiosity and nurtured early interest in technology and computing.'
-    ]
-  }
+    {
+        institute_name: 'Daffodil International University',
+        logoPath: '/diu.png',
+        duration: '2021 - 2024',
+        level: 'University',
+        description: [
+            'Completed Bachelor of Science in Computer Science and Engineering (CSE).',
+            'Gained knowledge in core areas such as Computer Networking, Peripheral Devices, Database Management Systems (DBMS), and System Analysis.',
+            'Built a strong technical foundation through academic projects and coursework.'
+        ]
+    },
+    {
+        institute_name: 'Bogura Polytechnic Institute',
+        logoPath: '/bogura.png',
+        duration: '2016 - 2021',
+        level: 'College',
+        description: [
+            'Chose a technical path over traditional fields, enrolling in a leading technical college in Bogura.',
+            'Discovered the vast opportunities within Computer Science and Engineering.',
+            'Developed strong motivation to pursue higher studies and build a career in CSE.'
+        ]
+    },
+    {
+        institute_name: 'Rani BilasMoni Govt. Boys High School',
+        logoPath: '/rani.png',
+        duration: '2011 - 2016',
+        level: 'High School',
+        description: [
+            'First exposure to computers through the school’s small computer lab.',
+            'Spent tiffin breaks exploring computers, despite limited resources.',
+            'Sparked curiosity and nurtured early interest in technology and computing.'
+        ]
+    }
 ];
+
+export const certificates = [
+    {
+        id: 'ph112',
+        certificateName: 'Complete Web Development with Programming Hero',
+        technologies: 'HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Firebase, Next.js',
+        institute: 'Programming Hero',
+        published: 'July 2025',
+        certificate_link: 'https://drive.google.com/file/d/1KOz3vs8N3Mq9CJLZbW5Ydiwl5PduTtZD/view?usp=drive_link',
+        duration: '6 Months'
+    },
+    {
+        id: 'fcc112',
+        certificateName: 'Front End Development Libraries',
+        technologies: 'Bootstrap, jQuery, SASS, React, Redux',
+        institute: 'Free Code Camp',
+        published: 'September 6, 2025',
+        certificate_link: 'https://drive.google.com/file/d/1bS-F_9fF4T3FtdxvtK1huTVhEYP38McQ/view?usp=sharing',
+        duration: 'N/A'
+    }
+]

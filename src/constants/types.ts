@@ -8,7 +8,12 @@ export interface IProject {
   cardHeight: string;
   previewImages: string[];
   bgImage: string;
-  liveLink: string;
-  githubLink: string;
-  isBgRequired: boolean
+  isBgRequired: boolean,
+  siteInfo: {
+    liveLink: string,
+    codes: {
+      type: string,
+      link: string,
+    }[]
+  }
 }

@@ -25,8 +25,7 @@ export default function ProjectDetails() {
   const description = projectData?.description;
   const features = projectData?.features;
   const technologies = projectData?.technologies ?? [];
-  const liveLink = projectData?.liveLink;
-  const githubLink = projectData?.githubLink;
+  const siteInfo = projectData?.siteInfo;
 
   useEffect(() => {
     setIsMounted(true);
@@ -114,9 +113,9 @@ export default function ProjectDetails() {
         </div>
 
         <div className='py-6 flex gap-4 flex-wrap'>
-          {liveLink && (
+          {siteInfo && (
             <a
-              href={liveLink}
+              href={siteInfo.liveLink}
               target="_blank"
               rel="noopener noreferrer"
               className='flex items-center gap-2 py-2 px-4 rounded border hover:scale-105 transition-transform duration-300 cursor-pointer'
@@ -124,15 +123,15 @@ export default function ProjectDetails() {
               <CgWebsite size={20} /> Visit Site
             </a>
           )}
-          {githubLink && (
-            <a
-              href={githubLink}
+          {siteInfo && ( siteInfo.codes.map((code, idx)=> <a key={idx}
+              href={code.link}
               target="_blank"
               rel="noopener noreferrer"
               className='flex items-center gap-2 py-2 px-4 rounded border hover:scale-105 transition-transform duration-300 cursor-pointer'
             >
-              <FaGithub size={20} /> View GitHub Code
-            </a>
+              <FaGithub size={20} /> {code.type}
+            </a>)
+            
           )}
         </div>
       </div>

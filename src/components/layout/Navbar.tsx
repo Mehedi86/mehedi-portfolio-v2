@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router'
 import { ModeToggle } from '../mode-toggler'
 import { FaBars, FaTimes } from "react-icons/fa"
 
@@ -7,44 +6,40 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const linkClass =
-    "hover:bg-gray-100 px-2 py-2 rounded dark:text-white dark:hover:bg-gray-600"
+    "hover:bg-gray-100 px-2 py-2 rounded dark:text-white dark:hover:bg-gray-600 cursor-pointer"
 
+  const handleNavClick = (id) => {
+    const section = document.querySelector(id)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+      setMenuOpen(false) // close mobile menu after click
+    }
+  }
 
   const navLinks = (
     <>
-      <Link className={linkClass} to="/">Home</Link>
-      <Link className={linkClass} to="/tasks">About</Link>
-      <Link className={linkClass} to="/projects">Projects</Link>
-      <Link className={linkClass} to="/tasks">Skills</Link>
-      <Link className={linkClass} to="/tasks">Education</Link>
-      <Link className={linkClass} to="/tasks">Contact</Link>
+      <li className={linkClass} onClick={() => handleNavClick('#home')}>Home</li>
+      <li className={linkClass} onClick={() => handleNavClick('#about')}>About</li>
+      <li className={linkClass} onClick={() => handleNavClick('#projects')}>Projects</li>
+      <li className={linkClass} onClick={() => handleNavClick('#skills')}>Skills</li>
+      <li className={linkClass} onClick={() => handleNavClick('#education')}>Education</li>
+      <li className={linkClass} onClick={() => handleNavClick('#contact')}>Contact</li>
     </>
   )
 
   return (
     <>
-      {/* Fixed Navbar */}
       <nav className="fixed top-0 left-0 w-full z-60 bg-transparent backdrop-blur-md">
         <div className="w-full lg:max-w-5/6 mx-auto h-16 flex justify-between items-center gap-3 px-5 relative border-b border-b-neutral-300 dark:border-none">
-          {/* left side logo and name */}
           <div className="flex items-center gap-6">
-            <div>
-              <h1 className="text-2xl font-bold py-1 px-2 shadow border rounded flex items-center gap-2 cursor-pointer text-neutral-400">
-                Mehedi
-              </h1>
-            </div>
-            {/* Desktop nav item menu */}
-            <div className="hidden lg:block">
-              <ul className="space-x-3">{navLinks}</ul>
-            </div>
+            <h1 className="text-2xl font-bold py-1 px-2 shadow border rounded text-neutral-400 cursor-pointer">
+              Mehedi
+            </h1>
+            <ul className="hidden lg:flex space-x-3">{navLinks}</ul>
           </div>
 
-          {/* right side items */}
           <div className="flex gap-2 md:gap-4 items-center">
-            <div>
-              <ModeToggle />
-            </div>
-            {/* Mobile & Tablet Hamburger */}
+            <ModeToggle />
             <button
               className="flex items-center lg:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -60,7 +55,6 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Mobile & Tablet Menu (absolute under navbar) */}
           <div
             className={`lg:hidden absolute top-16 right-5 w-64 p-8 shadow-lg rounded bg-stone-200 dark:bg-stone-800 transition-all duration-300 text-black dark:text-white ${menuOpen
               ? "opacity-100 translate-y-0"
@@ -72,7 +66,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Spacer div so content doesn’t hide under navbar */}
       <div className="h-16"></div>
     </>
   )

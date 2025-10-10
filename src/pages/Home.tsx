@@ -7,8 +7,6 @@ import CertificateBtn from '@/components/content/CertificateBtn'
 import '../../bgStyle.css'
 import Contact from '@/components/content/Contact'
 
-
-
 export default function Home() {
   return (
     <div>
@@ -17,14 +15,27 @@ export default function Home() {
         <div className="stars-layer stars1"></div>
         <div className="stars-layer stars2"></div>
         <div className="stars-layer stars3"></div>
+
         <div>
-          <Banner />
-          <About />
-          <CertificateBtn/>
-          <Projects />
-          <Skills/>
-          <Education/>
-          <Contact/>
+          <section id="home">
+            <Banner />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <CertificateBtn />
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="education">
+            <Education />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </div>
       </div>
     </div>
