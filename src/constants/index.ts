@@ -20,7 +20,7 @@ export const projects: IProject[] = [
         bgImage: '/projects/abstract1.jpg',
         isBgRequired: false,
         siteInfo: {
-            liveLink: 'https://event-management-ten-topaz.vercel.app',
+            liveLink: 'https://event-aura-project-3-v445.vercel.app',
             codes: [
                 {
                     type: 'Code',
@@ -31,97 +31,65 @@ export const projects: IProject[] = [
     },
     {
         id: 'project2',
-        name: 'Edulab',
-        routeName: 'eduLab',
-        previewImages:
-            ['/projects/edulab1.PNG'],
+        name: 'Adoptly',
+        routeName: 'Adoptly',
+        previewImages: ['/projects/adoptly1.PNG'],
         cardHeight: '',
-        description: 'A smart library management system designed to manage books, members, and borrowing activities efficiently.',
+        description: 'A pet adoption and donation platform that connects animal lovers with pets in need, making it easy to adopt, donate, and support animal welfare.',
         features: [
-            "Manage books with details like title, author, and category",
-            "User-friendly member registration and profile management",
-            "Borrowing and returning system with due date tracking",
-            "Search and filter books easily",
-            "Admin dashboard for monitoring library activities"
-        ]
-        ,
+            "Browse pets available for adoption with detailed profiles and images",
+            "Register and manage user profiles securely",
+            "Submit adoption requests and track their status",
+            "Donate to support pets and shelters",
+            "Admin dashboard to manage pets, users, and donation records"
+        ],
         technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        bgImage: '/projects/abstract2.jpg',
+        bgImage: '/projects/adoptly1.PNG',
         isBgRequired: true,
         siteInfo: {
-            liveLink: 'https://silly-cobbler-5517a0.netlify.app/',
+            liveLink: 'https://adoptly-team-project.vercel.app',
             codes: [
                 {
                     type: 'Frontend',
-                    link: 'https://github.com/Mehedi86/assignment-eleven'
+                    link: 'https://github.com/Mehedi86/adoptly-team-project'
                 },
                 {
                     type: 'Backend',
-                    link: 'https://github.com/Mehedi86/assignment-eleven-server'
+                    link: 'https://github.com/Mehedi86/adoptly-team-project-backend'
                 }
             ]
         }
     },
     {
         id: 'project3',
-        name: 'BuddyGarage',
+        name: 'QuickSurvey',
         routeName: 'buddyGarage',
-        previewImages:
-            ['/projects/buddyGarage1.PNG'],
+        previewImages: ['/projects/quick-survey.PNG'],
         cardHeight: 'lg:h-[190px] xl:h-[180px] 2xl:h-[250px]',
-        description: 'A car servicing platform, can book service through online and also take suggetion',
+        description: 'An interactive social survey platform that leverages AI suggestions, live feedback, and voice command integration to make surveys smarter and more engaging.',
         features: [
-            "Book and manage car maintenance services online",
-            "Schedule service appointments with ease",
-            "Track real-time service status updates",
-            "Receive automated service reminders",
-            "Access complete vehicle service history",
-            "Streamline garage operations for efficiency",
-            "Enjoy hassle-free vehicle maintenance management"
+            "Create and share social surveys effortlessly",
+            "Receive AI-driven suggestions for better survey questions",
+            "Collect real-time responses with live updates",
+            "Use voice commands to navigate and answer surveys",
+            "Analyze survey data with intuitive visualizations",
+            "Engage participants with interactive and dynamic surveys",
+            "Access survey history and insights anytime"
         ],
-        technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
+        technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind', 'OpenAI API'],
         bgImage: '/projects/abstract2.jpg',
         isBgRequired: true,
         siteInfo: {
-            liveLink: 'https://buddy-Garage-ten-topaz.vercel.app',
+            liveLink: 'https://fydp-project-next.vercel.app',
             codes: [
                 {
                     type: 'Code',
-                    link: 'https://github.com/Mehedi86/buddy-garage'
-                }
-            ]
-        }
-    },
-    {
-        id: 'project4',
-        name: 'SpendSence',
-        routeName: 'spendSence',
-        previewImages:
-            ['/projects/spendSence1.PNG'],
-        cardHeight: 'lg:h-[240px] xl:h-[250px] 2xl:h-[350px]',
-        description: 'An event booking application for managing and reserving events.',
-        features: [
-            "Record and track daily expenses easily",
-            "Categorize expenses for better financial insights",
-            "View spending summaries and analytics",
-            "Set monthly budgets and monitor limits",
-            "Track income alongside expenses",
-            "Visualize data with charts and reports",
-            "Secure user accounts with authentication"
-        ],
-        technologies: ['Next.js', 'MongoDB', 'Next Auth', 'Tailwind'],
-        bgImage: '/projects/abstract1.jpg',
-        isBgRequired: false,
-        siteInfo: {
-            liveLink: 'https://event-management-ten-topaz.vercel.app',
-            codes: [
-                {
-                    type: 'Code',
-                    link: 'https://github.com/Mehedi86/event-aura-project-3'
+                    link: 'https://fydp-project-next.vercel.app'
                 }
             ]
         }
     }
+
 ]
 
 

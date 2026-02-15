@@ -25,7 +25,7 @@ export default function Projects() {
                         {/* Project counter */}
                         <div className="text-right card2 p-4 border">
                             <h1 className="text-3xl lg:text-4xl font-bold">
-                                {inView && <CountUp end={4} duration={4} />}
+                                {inView && <CountUp end={projects.length} duration={3} />}
                             </h1>
                             <p className="uppercase text-sm md:text-base tracking-widest mt-2">
                                 Projects

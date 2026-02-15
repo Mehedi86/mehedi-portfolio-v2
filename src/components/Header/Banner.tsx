@@ -8,9 +8,18 @@ import { SiHackerrank } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiNextdotjs, SiTailwindcss, SiJavascript } from "react-icons/si";
 import { Link } from 'react-router';
+import { useCallback } from "react";
 
 export default function Banner() {
     const buttonClass = "bg-white text-black px-2 py-1 rounded cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-300"
+
+    const scrollToSection = useCallback((id: string) => {
+        const section = document.querySelector(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
         <div className="relative flex items-center justify-center h-[calc(100vh-64px)] overflow-hidden">
             {/* Background Blur Effect */}
@@ -44,9 +53,9 @@ export default function Banner() {
                     </p>
 
                     <div className='my-4 flex gap-4 flex-wrap'>
-                        <button className={`${buttonClass}`}><MdOutlineContacts size={16} /> Contact Me</button>
+                        <button onClick={() => scrollToSection('#contact')} className={`${buttonClass}`}><MdOutlineContacts size={16} /> Contact Me</button>
                         <Link to="/projects" className={`${buttonClass}`} target="_blank"><GoProjectSymlink size={16} />View Projects</Link>
-                        <Link to="https://drive.google.com/file/d/1sFGRoii51gD0Zhrym5w7ZzS0c7SfQbJ2/view?usp=sharing" className={`${buttonClass}`} target="_blank"><SiReaddotcv size={16} />Download Resume</Link>
+                        <Link to="https://drive.google.com/file/d/1GrIcv0TK_2cTGCzIq6DYPkXjyI5zbXRw/view?usp=sharing" className={`${buttonClass}`} target="_blank"><SiReaddotcv size={16} />Download Resume</Link>
                     </div>
                     {/* social links */}
                     <div className='flex w-1/2 md:w-1/3 mx-auto justify-between items-center my-12'>
